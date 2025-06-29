@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: basketball_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: basketball_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./init_basketball_db.sql:/docker-entrypoint-initdb.d/init.sql
