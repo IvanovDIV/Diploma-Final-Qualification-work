@@ -1,0 +1,13 @@
+train: Basketball.v2i.yolov8/train/images
+val: Basketball.v2i.yolov8/valid/images
+test: Basketball.v2i.yolov8/test/images
+
+nc: 5
+names: ['ball', 'made', 'person', 'rim', 'shoot']
+
+roboflow:
+  workspace: ownprojects
+  project: basketball-w2xcw
+  version: 2
+  license: Public Domain
+  url: https://universe.roboflow.com/ownprojects/basketball-w2xcw/dataset/2
